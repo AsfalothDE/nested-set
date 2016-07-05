@@ -350,7 +350,7 @@ class NestedSet
         $assetColumnSql = '';
         $assetColumns = $this->getAssetColumns();
 
-        $tableAlias = (empty($tableAlias)) ? '' : '.' . $tableAlias;
+        $tableAlias = (empty($tableAlias)) ? '' : $tableAlias . '.';
 
         if ($assetColumns) {
             foreach ($assetColumns as $column) {
